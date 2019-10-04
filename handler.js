@@ -8,7 +8,7 @@ AWS.config.update({ region: 'us-east-1' });
 
 module.exports.sendReminderDaily = (event, context, callback) => {
   const emailHTML = fs.readFileSync('./views/dailyReminder.html', 'utf-8');
-  const toAndFromAddress = 'arturo.estrada@ipointsystems.com';
+  const toAndFromAddress = 'verifiedEmail@yourdomain.com';
   const params = {
     Destination: {
       ToAddresses: [toAndFromAddress]
@@ -41,7 +41,7 @@ module.exports.sendReminderDaily = (event, context, callback) => {
 
 module.exports.sendReminderWeekend = (event, context, callback) => {
   const emailHTML = fs.readFileSync('./views/weekendReminder.html', 'utf-8');
-  const toAndFromAddress = 'arturo.estrada@ipointsystems.com';
+  const toAndFromAddress = 'verifiedEmail@yourdomain.com';
   const params = {
     Destination: {
       ToAddresses: [toAndFromAddress]
