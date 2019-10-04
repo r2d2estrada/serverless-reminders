@@ -1,0 +1,14 @@
+{
+  "name": "serverless-reminders",
+  "version": "1.0.0",
+  "description": "Serverless Tutorial",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arturo Estrada",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.542.0"
+  }
+}
